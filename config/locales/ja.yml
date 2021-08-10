@@ -1,0 +1,15 @@
+ja:
+  time:
+    formats:
+      default: "%Y年%m月%d日%H時%M分"
+      short: "%Y年%m月%d日"
+
+
+
+
+  activerecord:
+    attributes:
+      schedule:
+        title: タイトル
+        start: 開始日
+        finish: 終了日      
