@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ 
+body{
+    margin:0 ;
+}
+
+ h1{ color: white;
+    
+ 
+ }
+
+ 
+
+ .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    height: 60px;
+    margin:0 calc(50% - 50vw);
+ }
+
+ table { 
+    margin-left: auto;
+    margin-right: auto; 
+    border-collapse: collapse;
+    border:1px solid #333;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:crimson;
+    height: 60px;
+    margin:0 calc(50% - 50vw);
+}
+
+.footer2{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.schedules_count{
+    margin-left: 30px;
+}
+
+.schedulepath{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-align: center;   
+}
+
+.schedulepath2{
+    background-color:yellow ;
+}
+a{
+    text-decoration: none;
+}
+
+.center_p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.center_d{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+}
+

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p class="center_p">スケジュール詳細</p>
+<table>
+  <tr>
+  <th>
+    <strong>タイトル:</strong></th>
+    <td><%= @schedule.title %></td>
+  </th>  
+  </tr>
+
+  <tr>
+  <th>
+    <strong>開始日:</strong></th>
+    <td><%= l @schedule.start, format: :short %></td>
+  </th>  
+  </tr>
+
+  <tr>
+  <th>
+    <strong>投稿日時:</strong></th>
+    <td><%= l @schedule.updated_at, format: :short  %></td>
+  </th>  
+  </tr>
+
+  <tr>
+  <th>
+    <strong>終日:</strong></th>
+    <td><%= @schedule.allday %></td>
+  </th>  
+  </tr>
+  <tr>
+  <th>
+    <strong>スケジュールメモ:</strong></th>
+    <td><%= @schedule.content %></td>
+  </th>  
+  </tr>
+</table>
+
+<div class="center_d">
+<%= link_to 'スケジュール一覧に戻る', schedules_path %><br>
+<%= link_to 'スケジュールを編集する', edit_schedule_path(@schedule) %> <br>
+<%= link_to 'スケジュールを削除', @schedule, method: :delete, data: { confirm: '本当に削除しますか?' } %>
+</div>
